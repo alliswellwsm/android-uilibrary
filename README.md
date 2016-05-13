@@ -6,10 +6,10 @@ alliswellwsm创建的UI库
 
 
 
-Download
+Usage
 --------
 
-Download [the latest JAR][2] or grab via Maven:
+Maven:
 ```xml
 <dependency>
   <groupId>android.alliswell.wsm.uilibrary</groupId>
@@ -19,7 +19,7 @@ Download [the latest JAR][2] or grab via Maven:
 </dependency>
 ```
 or Gradle:
-```groovy
+```
 compile 'android.alliswell.wsm.uilibrary:android-uilibrary:1.0.0'
 ```
 
