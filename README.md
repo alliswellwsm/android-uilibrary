@@ -13,13 +13,13 @@ Maven:
 <dependency>
   <groupId>android.alliswell.wsm.uilibrary</groupId>
   <artifactId>android-uilibrary</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 ```
 or Gradle:
 ```
-compile 'android.alliswell.wsm.uilibrary:android-uilibrary:1.0.0'
+compile 'android.alliswell.wsm.uilibrary:android-uilibrary:1.0.1'
 ```
 
 1）BaseToobarActivity<br/>
