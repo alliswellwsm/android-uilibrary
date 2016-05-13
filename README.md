@@ -22,7 +22,7 @@ or Gradle:
 compile 'android.alliswell.wsm.uilibrary:android-uilibrary:1.0.0'
 ```
 
-1）BaseToobarActivity
+1）BaseToobarActivity<br/>
 第一步：继承Activity
 ```
 public class MainActivity extends BaseToobarActivity
@@ -36,4 +36,9 @@ public class MainActivity extends BaseToobarActivity
   <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
   <item name="colorAccent">@color/colorAccent</item>
 </style>
+```
+
+第三步：设置标题
+```
+public void setToobarTitle(int titleResID)
 ```
