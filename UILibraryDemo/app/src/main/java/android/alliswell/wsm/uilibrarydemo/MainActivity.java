@@ -12,6 +12,5 @@ public class MainActivity extends BaseToobarActivity {
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        setToobarTitle(R.string.app_name);
     }
 }

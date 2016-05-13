@@ -24,9 +24,9 @@ public abstract class BaseToobarActivity extends AppCompatActivity {
     private ToolbarHelper mToolbarHelper;
 
     /**
-     * 设置Toobar的标题
+     * setup title for toolbar
      *
-     * @param titleResID
+     * @param titleResID title resource id
      */
     public void setToobarTitle(int titleResID) {
         if (mToolbarHelper != null) {
@@ -37,6 +37,23 @@ public abstract class BaseToobarActivity extends AppCompatActivity {
 
             // 将标题显示在自定义的位置
             ((TextView) toolbar.findViewById(R.id.txt_toolbarTitle)).setText(titleResID);
+        }
+    }
+
+    /**
+     * setup title for toolbar
+     *
+     * @param title title
+     */
+    public void setToolbarTitle(CharSequence title) {
+        if (mToolbarHelper != null) {
+            // 隐藏系统固定的标题
+            setTitle(null);
+            Toolbar toolbar = mToolbarHelper.getToobar();
+            toolbar.setTitle(null);
+
+            // 将标题显示在自定义的位置
+            ((TextView) toolbar.findViewById(R.id.txt_toolbarTitle)).setText(title);
         }
     }
 
@@ -60,6 +77,10 @@ public abstract class BaseToobarActivity extends AppCompatActivity {
 
         super.setContentView(mToolbarHelper.getContentView());
         setSupportActionBar(mToolbarHelper.getToobar());
+
+        if (getTitle() != null) {
+            setToolbarTitle(getTitle());
+        }
     }
 
     private static class ToolbarHelper {
